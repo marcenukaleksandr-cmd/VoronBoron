@@ -1,0 +1,1 @@
+g++ main.cpp glad.c -Iinclude -IC:/msys64/mingw64/include -LC:/msys64/mingw64/lib -lglfw3 -lopengl32 -lgdi32 -static-libgcc -static-libstdc++ -o app.exe && app.exe
