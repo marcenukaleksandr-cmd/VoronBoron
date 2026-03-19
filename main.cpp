@@ -356,7 +356,7 @@ glm::vec3 Calcnormhub(int MODE, glm::vec3 p){
 int main() {
 
     int idx_open=1;
-    int MODE =0;
+    int MODE =1;
     cout<<"Write 0 for shader (recommended first)\nWrite 1 for scaner\n";
     cin>>idx_open;
     string idx_start = "\nWrite for visualisation:\n0 - dirka\n1 - sphere\n2 -sphere with plyama\n3 -donut\n4 -opuklosti\n5 - cylinder\n";
@@ -366,7 +366,7 @@ int main() {
     cin>>MODE;
     const string PATH = "shaders/";
     vector<string> list_to_open = {"shader", "scaner", "object"};
-    string to_open = list_to_open[0];
+    string to_open = list_to_open[idx_open];
     
     const float scan_radius = 5.0f;
 
